@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<meta name="theme-color" content="#090b12">
+<title>DJ SADIJAH PRO UG</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header><div class="brandmark">DJ</div><div><h1>DJ SADIJAH <span>PRO UG</span></h1><p>FOUR-DECK MOBILE MIX STATION</p></div><div class="status" id="status">READY</div></header>
+<main>
+  <section class="master panel">
+    <div><small>MASTER OUTPUT</small><strong id="masterState">STANDBY</strong></div>
+    <label>Crossfader <input id="crossfader" type="range" min="0" max="100" value="50"></label>
+    <label>Master <input id="masterVolume" type="range" min="0" max="100" value="80"></label>
+    <button id="stopAll" class="danger">STOP ALL</button>
+  </section>
+  <section id="decks" class="decks"></section>
+  <section class="panel samples"><div class="section-head"><div><small>PERFORMANCE</small><h2>Sample pads</h2></div><span class="pill">LOCAL AUDIO</span></div>
+    <div class="samplegrid">
+      <button data-tone="130.81">KICK</button><button data-tone="196">CLAP</button><button data-tone="261.63">TONE C</button><button data-tone="329.63">TONE E</button>
+    </div>
+    <p class="hint">Sample pads generate simple tones locally. Import audio into any deck to mix your own tracks.</p>
+  </section>
+</main>
+<footer>DJ SADIJAH PRO UG · Works offline · Local music stays on your device</footer>
+<script src="app.js"></script>
+</body></html>
